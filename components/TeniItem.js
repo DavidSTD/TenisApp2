@@ -1,23 +1,23 @@
 import { View, Text, Image, Pressable, StyleSheet, Platform } from "react-native"
 import { useNavigation} from '@react-navigation/native'
-import MealDetails from "./MealDetails"
+import TeniDetails from "./TeniDetails"
 
-function MealItem({ id, title, imageUrl, duration, complexity, affordability }){
+function TeniItem({ id, title, imageUrl, duration, complexity, affordability }){
     console.log('title', title)
     console.log('imageUrl', imageUrl)
 
     const navigation = useNavigation()
    
-    function selectMealItemHandler(){
-        navigation.navigate('MealDetail', { mealId: id})
+    function selectTeniItemHandler(){
+        navigation.navigate('TeniDetail', { teniId: id})
     }
 
     return(
-        <View style={styles.mailItem}>
+        <View style={styles.teniItem}>
             <Pressable 
                 android_ripple={{ color: '#ccc'}}
                 style={({ pressed }) => (pressed ? styles.buttonPressed : null) } 
-                onPress={selectMealItemHandler}
+                onPress={selectTeniItemHandler}
             >
                 <View>
                     <View>
@@ -29,7 +29,7 @@ function MealItem({ id, title, imageUrl, duration, complexity, affordability }){
                             {title}
                         </Text>
                     </View>
-                    <MealDetails 
+                    <TeniDetails 
                         duration={duration}
                         complexity={complexity}
                         affordability={affordability}
@@ -41,10 +41,10 @@ function MealItem({ id, title, imageUrl, duration, complexity, affordability }){
 
 }
 
-export default MealItem
+export default TeniItem
 
 const styles = StyleSheet.create({
-    mealItem: {
+    teniItem: {
         margin: 16,
         borderRadius: 8,
         overflow: Platform.OS === 'android' ? 'hidden' : 'visible',

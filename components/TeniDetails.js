@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native'
 
-function MealDetails({duration, complexity, affordability}){
+function TeniDetails({duration, complexity, affordability}){
     return(
 
         <View style={styles.details}>
@@ -12,7 +12,7 @@ function MealDetails({duration, complexity, affordability}){
 
 }
 
-export default MealDetails
+export default TeniDetails
 
 const styles = StyleSheet.create({
     details: {

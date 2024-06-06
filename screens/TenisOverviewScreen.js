@@ -1,15 +1,15 @@
 import { View, Text, FlatList, StyleSheet } from "react-native";
 import { useLayoutEffect } from 'react'
 
-import { MEALS, CATEGORIES } from "../data/dummy_data";
-import MealItem from "../components/MealItem";
+import { TENIS, CATEGORIES } from "../data/dummy_data";
+import TeniItem from "../components/TeniItem";
 
-function MealsOverviewScreen({ route, navigation }){
+function TenisOverviewScreen({ route, navigation }){
     const catId = route.params.categoryId
     console.log('catId', catId)
 
-    const displayedMeals = MEALS.filter((mealItem) => {
-        return mealItem.categoryIds.indexOf(catId) >= 0
+    const displayedTenis = TENIS.filter((teniItem) => {
+        return teniItem.categoryIds.indexOf(catId) >= 0
     })
 
     useLayoutEffect(() => {
@@ -20,11 +20,11 @@ function MealsOverviewScreen({ route, navigation }){
         })
     }, [catId, navigation])
 
-    function renderMealItem(itemData) {
+    function renderTeniItem(itemData) {
     
         return(
 
-            <MealItem
+            <TeniItem
                 id={itemData.item.id} 
                 title={itemData.item.title}
                 imageUrl={itemData.item.imageUrl}
@@ -38,17 +38,17 @@ function MealsOverviewScreen({ route, navigation }){
 
     return(
         <View style={styles.container}>
-            <Text>Meals Overview - { catId }</Text>
+            <Text>Tenis Overview - { catId }</Text>
             <FlatList 
-                data={displayedMeals}
+                data={displayedTenis}
                 keyExtractor={(item) => item.id}
-                renderItem={renderMealItem}
+                renderItem={renderTeniItem}
             />
         </View>
     )
 }
 
-export default MealsOverviewScreen
+export default TenisOverviewScreen
 
 const styles = StyleSheet.create({
     container: {

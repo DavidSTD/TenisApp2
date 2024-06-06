@@ -1,5 +1,5 @@
 import Category from '../models/category';
-import Tenis from '../models/meal';
+import Tenis from '../models/Tenis';
 
 export const CATEGORIES = [
   new Category('c1', 'Adidas', '#f5428d'),

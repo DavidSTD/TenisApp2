@@ -1,0 +1,158 @@
+.titulo{
+  background-color: black;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px 5px;
+  border-radius: 30px 0px 30px 0px;
+}
+
+.opciones{
+  margin-top: 25px;
+  display: flex;
+  padding: 30px 20px;
+  width: 9%;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  align-items: stretch;
+}
+.opciones button{
+  font-size: 25px;
+  background-color: black;
+  color: #ffff;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+.tenis{
+  margin-left: 20%;
+  display: flex;
+  margin-top: 60px;
+  padding: 20px;
+  justify-content: space-around;
+}
+.tenis .modelos{
+  border-radius: 15px;
+  padding: 20px;
+  background-color: black;
+}
+.tenis .modelos p {
+  font-size: 20px;
+  color: #ffff;
+  font-family: monospace;
+}
+.tenis .modelos button {
+  border: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 17px;
+  margin-left: 65%;
+}
+
+.formu{
+  display: none;
+  margin-left: 40%;
+  position: absolute;
+  z-index: 4;
+  width: 300px;
+  margin-top: 60px;
+  padding: 20px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgb(94, 94, 94);
+}
+.formu p {
+  font-size: 20px;
+  color: #ffff;
+  font-family: monospace;
+}
+.formu button {
+  border: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 17px;
+  margin-left: 65%;
+}
+
+/* Consultas de medios para adaptarse a diferentes tamaños de pantalla */
+@media screen and (max-width: 550px) {
+  .titulo{
+  background-color: black;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px 0px 30px 0px;
+}
+
+.opciones{
+  display: flex;
+  padding: 10px;
+  width: 115px;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  align-items: stretch;
+}
+.opciones button{
+  font-size: 25px;
+  background-color: black;
+  color: #ffff;
+  padding: 15px;
+  margin-top: 8px;
+}
+
+.tenis{
+  margin-left: 30%;
+  display: flex;
+  margin-top: 60px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tenis .modelos{
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: black;
+}
+.tenis .modelos p {
+  font-size: 20px;
+  color: #ffff;
+  font-family: monospace;
+}
+.tenis .modelos button {
+  border: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 17px;
+  margin-left: 65%;
+}
+
+.formu{
+  display: none;
+  margin-left: 40%;
+  position: absolute;
+  z-index: 4;
+  width: 300px;
+  margin-top: 60px;
+  padding: 20px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgb(94, 94, 94);
+}
+.formu p {
+  font-size: 20px;
+  color: #ffff;
+  font-family: monospace;
+}
+.formu button {
+  border: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 17px;
+  margin-left: 65%;
+}
+
+}

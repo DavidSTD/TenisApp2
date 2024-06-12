@@ -18,22 +18,22 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator
           screenOptions={{
-              headerStyle: { backgroundColor: '#987070'},
-              headerTintColor: 'white',
-              contentStyle: { backgroundColor: '#F1E5D1'}
+              headerStyle: { backgroundColor: '#EE2A00'},
+              headerTintColor: 'black',
+              contentStyle: { backgroundColor: 'EE2A00'}
           }}
         >
           <Stack.Screen 
-            name="TenisCategories" 
+            name="Tenis" 
             component={CategoriesScreen}
           />
           <Stack.Screen 
-            name="TenisOverview" 
-            component={TenisOverviewScreen}
+              name="TenisOverview" 
+              component={TenisOverviewScreen}
             options={{
               title: 'All categories',
-              headerTintColor: 'white',
-              contentStyle: { backgroundColor: '#C39898'}
+              headerTintColor: 'yellow',
+              contentStyle: { backgroundColor: 'EE2A00'}
             }} 
           />
           <Stack.Screen 

@@ -2,28 +2,30 @@ import Category from '../models/category';
 import Tenis from '../models/Tenis';
 
 export const CATEGORIES = [
-  new Category('c1', 'Jordan1', '#FF0000'),
-  new Category('c2', 'Yezzy Slide', '#00FFF0'),
-  new Category('c3', 'Yezzy 350', '#ECFF04'),
-  new Category('c4', 'Jordan 4', '#FFFFFF'),
+  new Category('c1', 'Jordan', '#FF0000'),
+  new Category('c3', 'Yezzy ', '#00FFF0'),
+  new Category('c5', 'Adidas', '#ECFF04'),
+  new Category('c7', 'New Balances', '#FFFFFF'),
+  
+  
 ];
 
 export const TENIS = [
   new Tenis(
     'm1',
-    ['c1', 'c4'],
+    ['c1','c2'],
     'Jordan 1',
-    'affordable',
-    'simple',
+    'Los Jordan 1 son uno de los modelos más icónicos y populares de la marca Nike, lanzados por primera vez en 1985. Diseñados por Peter Moore, revolucionaron la industria del calzado deportivo al ser los primeros zapatos de baloncesto en llevar el logotipo de Michael Jordan, quien en ese entonces estaba emergiendo como una estrella en la NBA.',
+    '',
     'https://thecave.mx/cdn/shop/products/Jordan1HighUniversityBlue1.thecavemx_720x.png?v=1679521352',
-    15,
+    
     [
-      '4 Tomatoes',
-      '1 Tablespoon of Olive Oil',
-      '1 Onion',
-      '250g Spaghetti',
-      'Spices',
-      'Cheese (optional)'
+      '',
+      '',
+      '',
+      '',
+      '',
+      ''
     ],
     [
       'Cut the tomatoes and the onion into small pieces.',
@@ -42,20 +44,41 @@ export const TENIS = [
 
   new Tenis(
     'm2',
-    ['c2','c3'],
-    'Yezzy Slide',
-    'affordable',
-    'simple',
-    'https://m.media-amazon.com/images/I/41SySD3IYrL._AC_SX500_.jpg',
-    15,
+    ['c1','c2'],
+    'Jordan 4',
+    '',
+    'Los Air Jordan 4 son uno de los modelos más icónicos de la línea Air Jordan de Nike. Fueron lanzados en 1989 y diseñados por Tinker Hatfield, quien también diseñó los Air Jordan 3. Este modelo es conocido por su combinación de estilo, innovación y rendimiento en la cancha.',
+    'https://th.bing.com/th/id/OIP.Bl9ItZZLtK-sAAL-LSJjbQHaHa?rs=1&pid=ImgDetMain',
+    
+    
+    false,
+    true,
+    true,
+    true
+  ),
+
+
+
+
+
+
+
+  new Tenis(
+    'm3',
+    ['c3','c4'],
+    'Yezzy 700',
+    'Los Yeezy 700 son una línea de zapatillas deportivas de alto rendimiento diseñadas por Kanye West en colaboración con Adidas. Desde su lanzamiento, han sido un fenómeno en el mundo de la moda y el calzado deportivo. Aquí hay una breve historia de los Yeezy 700:',
+    '',
+    'https://i.pinimg.com/564x/4b/29/f8/4b29f87425b635292d399cc229a873bb.jpg',
+    
    
    
     [
-      '1 Slice White Bread',
-      '1 Slice Ham',
-      '1 Slice Pineapple',
-      '1-2 Slices of Cheese',
-      'Butter'
+      '',
+      '',
+      '',
+      '',
+      ''
     ],
     [
       'Butter one side of the white bread',
@@ -67,22 +90,45 @@ export const TENIS = [
     false,
     false
   ),
+  new Tenis(
+    'm4',
+    ['c3','c4'],
+    'Yezzy Foam Runner',
+    'A pesar de sus críticas iniciales por su aspecto poco convencional, las Yeezy Foam Runner ganaron popularidad rápidamente. Muchas celebridades y figuras influyentes de la moda fueron vistas usando el calzado, lo que ayudó a aumentar su atractivo y a consolidarlo como un artículo codiciado.',
+    '',
+    'https://i.pinimg.com/736x/cb/b0/c3/cbb0c31517322ccad005c6e316ed76ef.jpg',
+    
+   
+   
+   
+    
+    false,
+    false,
+    false,
+    false
+  ),
+
+
+
+
+
+
+
+
+
 
   new Tenis(
-    'm3',
-    ['c2','c3'],
-    'Yezzy 350',
-    'pricey',
-    'simple',
-    'https://m.media-amazon.com/images/I/71sZOkbzhOL._AC_SX500_.jpg',
-    45,
+    'm5',
+    ['c5','c6'],
+    'Adidas Forum',
+    'Desde su lanzamiento, los Adidas Forum se ganaron la reputación de ser uno de los mejores zapatos de baloncesto disponibles en el mercado. Fueron usados por numerosos jugadores profesionales en la NBA y en otras ligas de baloncesto de todo el mundo.',
+    '',
+    'https://i.pinimg.com/736x/7f/91/2b/7f912bd6ac83ef93783180f18fb48064.jpg',
+    
     [
-      '300g Cattle Hack',
-      '1 Tomato',
-      '1 Cucumber',
-      '1 Onion',
-      'Ketchup',
-      '2 Burger Buns'
+      'Tienen Un Precio de $2600 pesos',
+      
+      
     ],
     [
       'Form 2 patties',
@@ -97,36 +143,93 @@ export const TENIS = [
     true
   ),
 
+
   new Tenis(
-    'm4',
-    ['c1','c4'],
-    'Jordan 4',
-    'luxurious',
-    'challenging',
-    'https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/73682086-2e6b-4ce1-b2be-ce0f97a27442/fecha-de-lanzamiento-de-los-air-jordan-4-industrial-blue-fv5029-141.jpg',
-    60,
+    'm6',
+    ['c5','c6'],
+    'Adidas Ozwemgo',
+    'Hoy en día, las Adidas Ozweego siguen siendo una opción popular entre los aficionados de la moda urbana y los entusiastas del calzado deportivo que aprecian su diseño distintivo y su conexión con la nostalgia de los años 90. Su resurgimiento es un testimonio de la capacidad de las marcas para revitalizar y reinventar sus productos para nuevas generaciones de consumidores.',
+    '',
+    'https://i.pinimg.com/736x/fb/c0/cf/fbc0cf147bd0cb9e1ca2e21016c07069.jpg',
+    
     [
-      '8 Veal Cutlets',
-      '4 Eggs',
-      '200g Bread Crumbs',
-      '100g Flour',
-      '300ml Butter',
-      '100g Vegetable Oil',
-      'Salt',
-      'Lemon Slices'
+      ,
+      'Tienen Un Precio de $3000 Pesos',
+      
     ],
     [
-      'Tenderize the veal to about 2–4mm, and salt on both sides.',
-      'On a flat plate, stir the eggs briefly with a fork.',
-      'Lightly coat the cutlets in flour then dip into the egg, and finally, coat in breadcrumbs.',
-      'Heat the butter and oil in a large pan (allow the fat to get very hot) and fry the schnitzels until golden brown on both sides.',
-      'Make sure to toss the pan regularly so that the schnitzels are surrounded by oil and the crumbing becomes ‘fluffy’.',
-      'Remove, and drain on kitchen paper. Fry the parsley in the remaining oil and drain.',
-      'Place the schnitzels on awarmed plate and serve garnishedwith parsley and slices of lemon.'
+      'Form 2 patties',
+      'Fry the patties for c. 4 minutes on each side',
+      'Quickly fry the buns for c. 1 minute on each side',
+      'Bruch buns with ketchup',
+      'Serve burger with tomato, cucumber and onion'
     ],
     false,
     false,
     false,
-    false
-  )
+    true
+  ),
+
+  
+  new Tenis(
+    'm7',
+    ['c7','c8'],
+    'New Balances',
+    'pricey',
+    'Durante los años 80 y 90, los New Balance 550 ganaron popularidad como una opción confiable entre los jugadores de baloncesto debido a su rendimiento sólido y su durabilidad. Fueron usados por numerosos jugadores profesionales en la NBA y en otras ligas de baloncesto de todo el mundo.',
+    'https://sneakernews.com/wp-content/uploads/2021/08/new-balance-550-bb550hl1-white-carolina-blue-release-date-1.jpg?w=1140',
+    
+    [
+      '',
+      '',
+      '',
+      '',
+      '',
+      ''
+    ],
+    [
+      'Form 2 patties',
+      'Fry the patties for c. 4 minutes on each side',
+      'Quickly fry the buns for c. 1 minute on each side',
+      'Bruch buns with ketchup',
+      'Serve burger with tomato, cucumber and onion'
+    ],
+    false,
+    false,
+    false,
+    true
+  ),
+
+
+  new Tenis(
+    'm7',
+    ['c7','c8'],
+    'New Balances Ml827',
+    'En resumen, el New Balance ML827 es un modelo emblemático que ha dejado una marca duradera en la historia de la marca. Su combinación de rendimiento, comodidad y estilo lo convierte en una opción popular tanto para corredores como para aquellos que buscan una estética retro en su calzado',
+
+    '',
+    'https://i.pinimg.com/564x/ee/7c/ed/ee7cedf8b7f52724cb752e9838c86da3.jpg',
+    
+    [
+      'Tiene Un Precio de $2000 pesos',
+      '',
+      '',
+      '',
+      '',
+      ''
+    ],
+    [
+      'Form 2 patties',
+      'Fry the patties for c. 4 minutes on each side',
+      'Quickly fry the buns for c. 1 minute on each side',
+      'Bruch buns with ketchup',
+      'Serve burger with tomato, cucumber and onion'
+    ],
+    false,
+    false,
+    false,
+    true
+  ),
+
+  
 ];
